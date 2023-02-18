@@ -1,7 +1,8 @@
 #!/bin/bash
 
+ORANGE="\033[0;33m"
 GREEN="\033[0;32m"
-NO_COLOR="\033[0m"
+NO_COLOR=Complete!"\033[0m"
 
 NAME=$1
 set -e

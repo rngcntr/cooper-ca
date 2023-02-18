@@ -1,5 +1,6 @@
 #!/bin/bash
 
+ORANGE="\033[0;33m"
 GREEN="\033[0;32m"
 NO_COLOR="\033[0m"
 
@@ -21,10 +22,7 @@ done
 printf "${GREEN}[user]${NO_COLOR} Preparing Directories...\n"
 mkdir -p /ca/user/${NAME}/private
 mkdir -p /ca/user/${NAME}/certs
-mkdir -p /ca/user/${
-GREEN="\033[0;32m"
-NO_COLOR="\033[0m"
-NAME}/csr
+mkdir -p /ca/user/${NAME}/csr
 
 printf "${GREEN}[user]${NO_COLOR} Generating Private Key...\n"
 openssl genrsa -aes256 -out /ca/user/${NAME}/private/key.pem 2> /dev/null
